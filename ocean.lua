@@ -29,13 +29,13 @@ end
 
 -- Configs (chunked ocean)
 local CHUNK_SIZE = 364              -- chunk width / length in studs
-local CHUNK_HEIGHT = 25              -- vertical thickness of water block (studs)
+local CHUNK_HEIGHT = 100              -- vertical thickness of water block (studs)
 local RENDER_DISTANCE_CHUNKS = 24    -- how many chunks radius around player to keep
 local CHUNK_CULL_PADDING = 8        -- extra padding before removing chunks
 
 -- existing configs
 local LOGO_IMAGE = "rbxassetid://4836612768"
-local AMBIENCE_SOUND_ID = "rbxassetid://78025480791776"
+local AMBIENCE_SOUND_ID = "rbxassetid://1845341094"
 local BUTTON_SOUND_ID = "rbxassetid://6042053626"
 
 local GUI_ZOOM_FOV = 50
@@ -725,5 +725,6 @@ if transparencySlider and transparencySlider.Set then transparencySlider.Set(0.2
 if reflectionSlider and reflectionSlider.Set then reflectionSlider.Set(0.5) else reflectionSlider.OnGet = 0.5 end
 
 print("Ocean Chunked Generator loaded. Press M to toggle the menu. Press Generate to start streaming the ocean.")
+
 
 
